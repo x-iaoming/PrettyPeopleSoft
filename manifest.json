@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "NicerBionic",
+  "description": "This extension reduces your mental stress when viewing your grades on bionic",
+  "version": "0.2.6",
+  "icons": { "16": "daisy_16.png",
+           "48": "daisy_48.png",
+          "128": "daisy_128.png" },
+  "permissions": [
+    "https://vbm.brynmawr.edu/*"
+  ],
+  "web_accessible_resources": [
+  	"template.html"
+  ],
+  "content_scripts": [
+  {
+    "css": ["styles.css"],
+    "matches": ["https://vbm.brynmawr.edu/*"],
+    "js": ["jquery-3.4.js","content.js"]
+  }
+]
+
+}
