@@ -1,22 +1,30 @@
 {
   "manifest_version": 2,
-  "name": "NicerBionic",
-  "description": "This extension reduces your mental stress when viewing your grades on bionic",
-  "version": "0.2.6",
-  "icons": { "16": "daisy_16.png",
-           "48": "daisy_48.png",
-          "128": "daisy_128.png" },
+  "name": "Pretty PeopleSoft",
+  "description": "This extension improves the design and functionalities of Oracle's PeopleSoft",
+  "version": "0.2.0.7",
+  "icons": { "16": "bionic16.png",
+           "48": "bionic48.png",
+          "128": "bionic128.png" },
+  "browser_action": {
+      "default_popup": "popup.html"
+  },
   "permissions": [
-    "https://vbm.brynmawr.edu/*"
+    "https://pa.cc.unc.edu/*",
+    "https://vbm.brynmawr.edu/*",
+    "https://phubprod.princeton.edu/*",
+    "https://css.adminapps.cornell.edu/*",
+    "https://calcentral.berkeley.edu/*"
   ],
   "web_accessible_resources": [
-  	"template.html"
+    "template.html"
   ],
   "content_scripts": [
   {
     "css": ["styles.css"],
-    "matches": ["https://vbm.brynmawr.edu/*"],
-    "js": ["jquery-3.4.js","content.js"]
+    "matches": ["https://pa.cc.unc.edu/*","https://vbm.brynmawr.edu/*","https://phubprod.princeton.edu/*","https://css.adminapps.cornell.edu/*","https://calcentral.berkeley.edu/*"],
+    "js": ["jquery-3.4.js","content.js"],
+    "run_at": "document_end"
   }
 ]
 
