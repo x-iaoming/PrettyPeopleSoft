@@ -1,4 +1,4 @@
-# NicerBionic
+# Pretty PeopleSoft
 A chrome extension that beautifies PeopleSoft interface, exports schedule to calendar automatically, and support you before you view your grades!
 * All rights reserved. Copyright © 2019 Ruiming Li
 * Download: [Chrome Web Store](https://chrome.google.com/webstore/detail/pretty-peoplesoft/oikoejjokalkhgedbkjbfcjdpgemdlnb)
