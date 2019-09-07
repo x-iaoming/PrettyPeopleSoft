@@ -249,6 +249,7 @@ $(document).ready(function(){
 		        }
 
                 // Add the time slot to calendar
+	        // Specific formatting and _zp and _isofix function - credit: https://gist.github.com/dudewheresmycode/ff1d364c1c6d787fe7ea
                 ics_lines.push(
                  "BEGIN:VEVENT",
                  "UID:event-"+now.getTime()+q+k+"@addroid.com",
