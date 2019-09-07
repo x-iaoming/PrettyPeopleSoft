@@ -280,6 +280,7 @@ $(document).ready(function(){
             
             // define save file
             // var now = new Date();
+            // saving ics file - credit to: https://gist.github.com/dudewheresmycode/ff1d364c1c6d787fe7ea
             this._save = function(fileURL){
                 var save = document.createElement('a');
                 save.href = fileURL;
